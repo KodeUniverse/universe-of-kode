@@ -1,18 +1,36 @@
 <script lang="ts">
   import { Button } from "../button";
+  import { Sun, Moon } from "@lucide/svelte";
+  interface Theme {
+    current: string;
+  }
 
-  let currTheme = $state<string>("dark");
+  let theme = $state<Theme>({ current: "dark" });
 
-  function switchTheme() {
-    if (currTheme === "dark") {
-      currTheme = "light";
+  function onclick() {
+    if (theme.current === "dark") {
+      theme.current = "light";
     } else {
-      currTheme = "dark";
+      theme.current = "dark";
     }
   }
+  $effect(() => {
+    document.documentElement.setAttribute("class", theme.current);
+  });
 </script>
 
-<div>
-  <p>{currTheme}</p>
-  <Button onclick={switchTheme} />
+<div id="theme-toggle">
+  <Button {onclick}>
+    {#if theme.current === "light"}
+      <Moon />
+    {:else}
+      <Sun />
+    {/if}
+  </Button>
 </div>
+
+<style>
+  #theme-toggle {
+    margin: 5px;
+  }
+</style>
