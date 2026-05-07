@@ -1,5 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>
-  Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the
-  documentation
-</p>
+<script lang="ts">
+  import Card from "$lib/components/ui/card/card.svelte";
+  import CardContent from "$lib/components/ui/card/card-content.svelte";
+  import CardTitle from "$lib/components/ui/card/card-title.svelte";
+</script>
+
+<div id="portfolio-section" class="flex h-full">
+  <Card class="bg-primary">
+    <CardTitle>AlphaView Trading Dashboard</CardTitle>
+    <CardContent class="prose">blah balh blah</CardContent>
+  </Card>
+</div>
