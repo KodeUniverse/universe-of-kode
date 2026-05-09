@@ -4,7 +4,6 @@
 
 <nav class="flex h-1/14 items-center bg-card">
   <div id="nav-settings">
-    <ThemeToggle />
   </div>
 </nav>
 

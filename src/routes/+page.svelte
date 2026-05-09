@@ -4,9 +4,8 @@
   import CardTitle from "$lib/components/ui/card/card-title.svelte";
 </script>
 
-<div class="flex h-full">
-  <Card>
-    <CardTitle>AlphaView Trading Dashboard</CardTitle>
-    <CardContent class="prose">blah balh blah</CardContent>
-  </Card>
+<div id="content" class="flex flex-col h-full">
+<div id="top-bar" class="flex justify-center items-center h-1/5">
+    <h1 class="text-6xl">WELCOME</h1>
+</div>
 </div>
