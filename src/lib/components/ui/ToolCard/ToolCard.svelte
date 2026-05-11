@@ -3,12 +3,15 @@
 
   import pythonLogo from "$lib/assets/python-logo.svg";
   import typescriptLogo from "$lib/assets/typescript-logo.svg";
-  import postgresLogo from "$lib/assets/postgres-logo.svg";
+  import postgresLogo from "$lib/assets/postgres-logo.png";
   import linuxLogo from "$lib/assets/linux-logo.png";
-  import neovimLogo from "$lib/assets/neovim-logo.png";
+  import neovimLogo from "$lib/assets/neovim-logo.svg";
   import dockerLogo from "$lib/assets/docker-logo.svg";
   import redisLogo from "$lib/assets/redis-logo.svg";
   import pyTorchLogo from "$lib/assets/pytorch-logo.png";
+  import svelteLogo from "$lib/assets/svelte-logo.svg";
+  import reactLogo from "$lib/assets/react-logo.svg";
+
     let { toolName }: {toolName: string} = $props();
    
    const toolImageMap = {
@@ -19,7 +22,9 @@
     neovim: neovimLogo,
     docker: dockerLogo,
     redis: redisLogo,
-    pytorch: pyTorchLogo
+    pytorch: pyTorchLogo,
+    svelte: svelteLogo,
+    react: reactLogo
    }
 
 </script>

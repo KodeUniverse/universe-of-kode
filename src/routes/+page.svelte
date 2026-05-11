@@ -11,7 +11,7 @@
   let headerTitle: HTMLElement;
   let headerBody: HTMLElement;
 
-  const techTools = ["Python", "TypeScript", "PostgreSQL", "Linux","Neovim", "PyTorch","Docker", "Redis"]
+  const techTools = ["Python", "TypeScript", "Svelte","React","PostgreSQL", "Linux","Neovim", "PyTorch","Docker", "Redis"]
 
   $effect(()=> {
     animate(headerTitle, {innerHTML: scrambleText()})
