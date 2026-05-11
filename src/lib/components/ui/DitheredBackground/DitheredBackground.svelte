@@ -11,20 +11,20 @@
 
 </script>
 
-<div id="star-bg" bind:this={animRoot}></div>
-<div id="star-bg-overlay">
+<div id="dithered-bg" bind:this={animRoot}></div>
+<div id="bg-site-overlay">
     {#if children}
         {@render children()}
     {/if}
 </div>
 
 <style>
-    #star-bg {
+    #dithered-bg {
         position: fixed;
         inset: 0;
         z-index: 0;
     }
-    #star-bg-overlay {
+    #bg-site-overlay {
         position: relative;
         z-index: 1;
         min-height: 100vh;
