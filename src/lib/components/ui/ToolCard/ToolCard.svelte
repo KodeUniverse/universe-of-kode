@@ -13,7 +13,6 @@
   }
     
     let { toolName }: {toolName: string} = $props();
-    console.log(JSON.stringify(toolImageMap))
 </script>
         
         <Card class="tool-card flex-row gap-2 py-2 px-2 justify-center">
