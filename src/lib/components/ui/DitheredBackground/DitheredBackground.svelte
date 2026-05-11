@@ -1,6 +1,6 @@
 <script lang="ts">
     import {onMount} from "svelte";
-    import renderBackground from "$lib/vanilla/stars3D" 
+    import renderBackground from "$lib/vanilla/DitheredWavesBG.ts" 
 
     let animRoot: HTMLElement;
     let { children } = $props();
@@ -27,7 +27,7 @@
     #star-bg-overlay {
         position: relative;
         z-index: 1;
-        height: 100%
+        min-height: 100vh;
     }
 </style>
 
