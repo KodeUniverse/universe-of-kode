@@ -5,7 +5,7 @@
     let animRoot: HTMLElement;
     let { children } = $props();
 
-    onMount(() => {
+    $effect(() => {
         renderBackground(animRoot);
     }) 
 
