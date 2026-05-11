@@ -21,3 +21,16 @@
 >
 	{@render children?.()}
 </div>
+
+<style>
+    div {
+        border-color: var(--border);
+        transition: border-color 250ms ease-in-out;
+    }
+    div:hover {
+        border-color: var(--glow);
+        transition: border-color 250ms ease-in-out;
+    }
+    
+
+</style>

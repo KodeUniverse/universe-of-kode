@@ -18,3 +18,12 @@
 >
 	{@render children?.()}
 </div>
+
+<style>
+    div{
+        font-size: var(--text-xl);
+        font-weight: 700px;
+        margin: 10px; 
+    }
+
+</style>

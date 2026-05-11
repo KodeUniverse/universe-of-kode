@@ -101,18 +101,4 @@
 
 <style>
 
-    .project-cards :global([data-slot="card"]) {
-        border-color: var(--border);
-        transition: border-color 250ms ease-in-out;
-    }
-    .project-cards :global([data-slot="card"]:hover) {
-        border-color: var(--glow);
-        transition: border-color 250ms ease-in-out;
-    }
-    
-    .project-cards :global([data-slot="card-title"]) {
-        font-size: var(--text-xl);
-        font-weight: 700px;
-        margin: 10px; 
-    }
 </style>
