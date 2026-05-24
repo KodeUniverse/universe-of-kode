@@ -6,99 +6,97 @@
   import CardTitle from "$lib/components/ui/card/card-title.svelte";
   import CardFooter from "$lib/components/ui/card/card-footer.svelte";
   import ToolCard from "$lib/components/ui/ToolCard/ToolCard.svelte";
-  import {scrambleText, animate} from "animejs";
+  import { scrambleText, animate } from "animejs";
 
   let headerTitle: HTMLElement;
   let headerBody: HTMLElement;
 
-  const techTools = ["Python", "TypeScript", "Svelte","React","PostgreSQL", "Linux","Neovim", "PyTorch","Docker", "Redis"]
+  const techTools = [
+    "Python",
+    "TypeScript",
+    "Svelte",
+    "React",
+    "PostgreSQL",
+    "Linux",
+    "Neovim",
+    "PyTorch",
+    "Docker",
+    "Redis",
+  ];
 
-  $effect(()=> {
-    animate(headerTitle, {innerHTML: scrambleText()})
-    animate(headerBody, {innerHTML: scrambleText()})
-  })
+  $effect(() => {
+    animate(headerTitle, { innerHTML: scrambleText() });
+    animate(headerBody, { innerHTML: scrambleText() });
+  });
 </script>
 
 <div id="page" class="flex flex-col items-center">
-<div id="top-bar" class="flex justify-center items-center p-4 w-full">
-    <Button variant="link">
-        home
-    </Button>
-    <Button variant="link">
-        thoughts
-    </Button>
-</div>
-    <main id="content">
-    <h1 bind:this={headerTitle} class="text-6xl my-20 ">Hello</h1>
+  <div id="top-bar" class="flex justify-center items-center p-4 w-full">
+    <Button variant="link">home</Button>
+    <Button variant="link">thoughts</Button>
+  </div>
+  <main id="content">
+    <h1 bind:this={headerTitle} class="text-6xl my-20">Hello</h1>
     <p bind:this={headerBody} class="prose text-white">
-    My name is Dakshin, I go by KodeUniverse on GitHub and the internet. Welcome to my site! I post projects and tech that I have created here, as well as highlight any interesting new tech or other interests I have. Feel free to drop a comment on any posts or reach out to my contacts!
+      My name is Dakshin, I go by KodeUniverse on GitHub and the internet.
+      Welcome to my site! I post projects and tech that I have created here, as
+      well as highlight any interesting new tech or other interests I have. Feel
+      free to drop a comment on any posts or reach out to my contacts!
     </p>
     <section id="biography">
-        <h2 class="text-2xl my-8"> 
-            My tools
-        </h2>
-        <div id="tools" class="grid grid-cols-5 grid-rows-2 gap-2">
-        
+      <h2 class="text-2xl my-8">My tools</h2>
+      <div id="tools" class="grid grid-cols-5 grid-rows-2 gap-2">
         {#each techTools as tool}
-        <ToolCard toolName={tool} /> 
+          <ToolCard toolName={tool} />
         {/each}
-
-        </div>
+      </div>
     </section>
     <section id="projects">
-        <h2 class="text-2xl my-8">
-             Projects i've been hacking on...
-        </h2>
-        <div class="project-cards grid gap-5 grid-cols-1" id="project-cards">
+      <h2 class="text-2xl my-8">Projects i've been hacking on...</h2>
+      <div class="project-cards grid gap-5 grid-cols-1" id="project-cards">
         <Card>
-            <CardTitle>
-                AlphaView Trading Dashboard
-            </CardTitle>
-            <CardContent>
-                <p class="prose text-white">
-                yadda yadda yap yap yap lmao...
-                </p>
-            </CardContent>
-            <CardFooter class="flex gap-5">
-                <Button>Link</Button>
-                <Button>GitHub</Button>
-            </CardFooter>
+          <CardTitle>AlphaView Trading Dashboard</CardTitle>
+          <CardContent>
+            <p class="prose text-white">yadda yadda yap yap yap lmao...</p>
+          </CardContent>
+          <CardFooter class="flex gap-5">
+            <Button>Link</Button>
+            <Button>GitHub</Button>
+          </CardFooter>
         </Card>
         <Card>
-            <CardTitle>
-                Project 2
-            </CardTitle>
-            <CardContent>
+          <CardTitle>PIXELSCAPE Pixel Art Editor</CardTitle>
+          <CardContent>
             <p class="prose text-white">
-                Hopefully something cool and not overdone and fucking useless
+              PIXELSCAPE is a lightweight pixel art creation tool, written as a
+              terminal user interface in Rust. It comes complete with Vim
+              keybinds, layering, support for up to 64x64 images.
             </p>
-            </CardContent>
+          </CardContent>
 
-            <CardFooter class="flex gap-5">
-                <Button>Link</Button>
-                <Button>GitHub</Button>
-            </CardFooter>
+          <CardFooter class="flex gap-5">
+            <Button>Link</Button>
+            <Button>GitHub</Button>
+          </CardFooter>
         </Card>
 
         <Card>
-            <CardTitle>
-                Project 3 
-            </CardTitle>
-            <CardContent>
+          <CardTitle>Project 3</CardTitle>
+          <CardContent>
             <p class="prose text-white">
-                Blah blah blah.. yap yap yap... more fucking talking.... all i do is fucking talk
+              Blah blah blah.. yap yap yap... more fucking talking.... all i do
+              is fucking talk
             </p>
-            </CardContent>
-            <CardFooter class="flex gap-5">
-                <Button>Link</Button>
-                <Button>GitHub</Button>
-            </CardFooter>
+          </CardContent>
+          <CardFooter class="flex gap-5">
+            <Button>Link</Button>
+            <Button>GitHub</Button>
+          </CardFooter>
         </Card>
-        </div>
+      </div>
     </section>
-    </main>
+  </main>
 </div>
 
 <style>
-
 </style>
