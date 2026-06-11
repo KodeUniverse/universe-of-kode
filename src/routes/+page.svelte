@@ -6,9 +6,11 @@
   import CardTitle from "$lib/components/ui/card/card-title.svelte";
   import CardFooter from "$lib/components/ui/card/card-footer.svelte";
   import ToolCard from "$lib/components/ui/ToolCard/ToolCard.svelte";
+  import { ExternalLinkIcon } from "@lucide/svelte";
 
-  let heroTitle: HTMLElement;
-  let heroSubtitle: HTMLElement;
+  let mainTitle: HTMLElement;
+  let mainSubtitle: HTMLElement;
+  let mainDesc: HTMLElement;
 
   const techTools = [
     "Python",
@@ -25,26 +27,28 @@
   ];
 
   $effect(() => {
-    animate(heroTitle, { innerHTML: scrambleText() });
-    animate(heroSubtitle, { innerHTML: scrambleText() });
+    animate(mainTitle, { innerHTML: scrambleText() });
+    animate(mainSubtitle, { innerHTML: scrambleText() });
+    animate(mainDesc, { innerHTML: scrambleText() });
   });
 </script>
 
 <div id="page" class="flex flex-col items-center">
   <section
-    id="hero"
+    id="home"
     class="flex min-h-[85vh] w-full max-w-3xl flex-col items-center justify-center px-4"
   >
-    <h1 bind:this={heroTitle} class="mb-3 text-4xl font-bold md:text-7xl">
+    <h1 bind:this={mainTitle} class="mb-3 text-4xl font-bold md:text-7xl">
       KodeUniverse
     </h1>
     <p
-      bind:this={heroSubtitle}
+      bind:this={mainSubtitle}
       class="mb-6 text-lg text-muted-foreground md:text-2xl"
     >
       Software Engineer
     </p>
     <p
+      bind:this={mainDesc}
       class="text-sm text-muted-foreground leading-relaxed md:text-base text-center"
     >
       Hello friend! My name is Dakshin, I go by KodeUniverse on GitHub. Please
@@ -84,38 +88,57 @@
         <CardTitle>AlphaView Trading Dashboard</CardTitle>
         <CardContent>
           <p class="text-sm text-muted-foreground">
-            Real-time market visualization platform with advanced charting,
-            portfolio tracking, and paper trading. Built with Python, React, and
-            WebSocket-based data pipelines.
+            Real-time market visualization platform for quants and retail
+            algotraders with advanced charting, backtesting, PnL simulation, and
+            LLM integration for generating insights. Built with TypeScript,
+            Python, React, and WebSocket-based data pipelines.
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
-          <Button href="#" variant="default" size="sm">Link</Button>
           <Button
             href="https://github.com/KodeUniverse/alpha-view"
-            variant="outline"
-            size="sm">GitHub</Button
-          >
+            variant="default"
+            size="sm"
+            ><ExternalLinkIcon />GitHub
+          </Button>
         </CardFooter>
       </Card>
       <Card>
         <CardTitle>PIXELSCAPE Pixel Art Editor</CardTitle>
         <CardContent>
           <p class="text-sm text-muted-foreground">
-            Lightweight pixel art editor built as a terminal UI in Rust. Vim
-            keybinds, layer support, animation sequencing, and export to PNG,
-            GIF, and sprite sheet formats.
+            Lightweight but powerful pixel art editor built as a terminal UI in
+            Rust. Supports layers, brush types and sizes, dithering,
+            transparency, a custom project file format, export to PNG, and
+            mouse/keyboard controls.
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
-          <Button href="#" variant="default" size="sm">Link</Button>
           <Button
             href="https://github.com/KodeUniverse/pixelscape"
-            variant="outline"
-            size="sm">GitHub</Button
+            variant="default"
+            size="sm"><ExternalLinkIcon />GitHub</Button
           >
         </CardFooter>
       </Card>
+      <Card>
+        <CardTitle>GIF-Fox Browser Extension</CardTitle>
+        <CardContent>
+          <p class="text-sm text-muted-foreground">
+            A Firefox browser extension that provides a simple and lightweight
+            animated .gif picker to use animated reaction images on social media
+            sites and forums.
+          </p>
+        </CardContent>
+        <CardFooter class="flex gap-3">
+          <Button
+            href="https://github.com/KodeUniverse/gif-fox"
+            variant="default"
+            size="sm"><ExternalLinkIcon />GitHub</Button
+          >
+        </CardFooter>
+      </Card>
+
       <Card>
         <CardTitle>KodeQuery</CardTitle>
         <CardContent>
@@ -126,8 +149,7 @@
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
-          <Button href="#" variant="default" size="sm">Link</Button>
-          <Button href="#" variant="outline" size="sm">GitHub</Button>
+          <Button href="#" variant="default" size="sm">GitHub</Button>
         </CardFooter>
       </Card>
     </div>
@@ -149,7 +171,7 @@
   </section>
 
   <footer class="pb-8 pt-16 text-xs text-muted-foreground">
-    <span class="terminal-prompt">$</span> echo "built with svelte + tailwind + three.js
-    + caffeine + sleep deprivation"
+    <span class="terminal-prompt">$</span> echo "built with sveltekit + three.js +
+    caffeine + sleep deprivation"
   </footer>
 </div>
