@@ -16,7 +16,7 @@
 </script>
         
         <Card class="tool-card flex-row gap-2 py-2 px-2 justify-center">
-            <img src={toolImageMap[toolName.toLowerCase()]} class="w-6 h-7 justify-center"/> 
+            <img src={toolImageMap[toolName.toLowerCase()]} alt={toolName} class="w-6 h-7 justify-center"/> 
             <p>{toolName}</p>
         </Card>
 
