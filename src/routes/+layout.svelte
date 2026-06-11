@@ -7,7 +7,8 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<div id="root" class="min-h-screen w-screen">
+<NavBar />
+<div id="root" class="min-h-screen w-screen pt-14">
   <DitheredBackground>
   {@render children()}
   </DitheredBackground>
