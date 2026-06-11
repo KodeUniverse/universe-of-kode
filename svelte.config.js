@@ -16,6 +16,9 @@ const config = {
       assets: "build",
       fallback: null,
     }),
+    paths: {
+      base: process.env.NODE_ENV === "production" ? "/universe-of-kode" : "",
+    },
   },
 };
 
