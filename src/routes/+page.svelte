@@ -51,8 +51,9 @@
       bind:this={mainDesc}
       class="text-sm text-muted-foreground leading-relaxed md:text-base text-center"
     >
-      Hello friend! My name is Dakshin, I go by KodeUniverse on GitHub. Please
-      check out the cool stuff I have below.
+      Hello friend! My name is Dakshin, I go by KodeUniverse on GitHub. Welcome
+      to my website! I showcase some of my programming projects here. Please
+      check out the cool stuff below!
     </p>
     <div class="mt-8 flex gap-4">
       <a href="#projects"><Button variant="default">View Projects</Button></a>
@@ -64,11 +65,11 @@
     <div class="terminal-prompt mb-3 text-xs md:text-sm">$ cat about.txt</div>
     <p class="mb-4 text-sm leading-relaxed text-muted-foreground md:text-base">
       Hi, I'm Dakshin. I work as quantitative risk analyst, and when I'm not at
-      work I do open source development, design video games, play metal guitar,
-      and tinker with my PC hardware. I love working on different kinds of
-      projects and I end up exploring a wide variety of practices. Please
-      contact me if you like what you see below and/or want to work with me!
-      Always open to meet new people :)
+      work I do open source development, design video games, write music, and
+      tinker with my PC hardware. I love working on different kinds of projects
+      and I end up exploring a wide variety of practices. Please contact me if
+      you like what you see below and/or want to work with me! Always open to
+      meet new people :)
     </p>
   </section>
 
