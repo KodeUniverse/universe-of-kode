@@ -122,7 +122,7 @@
         </CardFooter>
       </Card>
       <Card>
-        <CardTitle>GIF-Fox Browser Extension</CardTitle>
+        <CardTitle>GIF Fox Browser Extension</CardTitle>
         <CardContent>
           <p class="text-sm text-muted-foreground">
             A Firefox browser extension that provides a simple and lightweight
