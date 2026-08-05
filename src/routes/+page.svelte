@@ -64,12 +64,13 @@
   <section id="about" class="section-border w-full max-w-3xl px-4">
     <div class="terminal-prompt mb-3 text-xs md:text-sm">$ cat about.txt</div>
     <p class="mb-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-      Hi, I'm Dakshin. I work as quantitative risk analyst, and when I'm not at
-      work I do open source development, design video games, write music, and
-      tinker with my PC hardware. I love working on different kinds of projects
-      and I end up exploring a wide variety of practices. Please contact me if
-      you like what you see below and/or want to work with me! Always open to
-      meet new people :)
+      Hi, I'm Dakshin. I work as a risk quant and software developer, and when
+      I'm not at work I do open source development on my own projects, tinker
+      with PC hardware, write progressive metal music, and enjoy city life. I
+      love working on different kinds of projects and I end up exploring a wide
+      variety of hobbies. Please contact me if you like what you see below
+      and/or want to work with me! Always open to meet new people and learn from
+      each other. :)
     </p>
   </section>
 
@@ -90,9 +91,9 @@
         <CardContent>
           <p class="text-sm text-muted-foreground">
             Real-time market visualization platform for quants and retail
-            algotraders with advanced charting, backtesting, PnL simulation, and
-            LLM integration for generating insights. Built with TypeScript,
-            Python, React, and WebSocket-based data pipelines.
+            algotraders with advanced charting tools and fundamental quant
+            metrics. Built with TypeScript, Python, React, and WebSocket-based
+            data pipelines.
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
@@ -109,9 +110,10 @@
         <CardContent>
           <p class="text-sm text-muted-foreground">
             Lightweight but powerful pixel art editor built as a terminal UI in
-            Rust. Supports layers, brush types and sizes, dithering,
-            transparency, a custom project file format, export to PNG, and
-            mouse/keyboard controls.
+            Rust. Supports layers, mouse-based and key-based editing, brush
+            sizes and types (fill, dithering, etc.), undo/redo, and
+            transparency. Supports export to PNG and a custom project file
+            format, and is cross-platform on Windows and Linux.
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
@@ -127,8 +129,9 @@
         <CardContent>
           <p class="text-sm text-muted-foreground">
             A Firefox browser extension that provides a simple and lightweight
-            animated .gif picker to use animated reaction images on social media
-            sites and forums.
+            animated GIF picker to use animated reaction images on social media
+            sites and forums. Uses KLIPY GIFs API as a data source, sign up for
+            a free API key on klipy.com to use.
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
@@ -137,20 +140,6 @@
             variant="default"
             size="sm"><ExternalLinkIcon />GitHub</Button
           >
-        </CardFooter>
-      </Card>
-
-      <Card>
-        <CardTitle>KodeQuery</CardTitle>
-        <CardContent>
-          <p class="text-sm text-muted-foreground">
-            CLI database exploration tool with intelligent schema discovery,
-            natural language query translation, and beautiful terminal output.
-            Supports PostgreSQL, SQLite, and Redis backends.
-          </p>
-        </CardContent>
-        <CardFooter class="flex gap-3">
-          <Button href="#" variant="default" size="sm">GitHub</Button>
         </CardFooter>
       </Card>
     </div>
