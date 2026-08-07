@@ -8,7 +8,8 @@
   import ToolCard from "$lib/components/ui/ToolCard/ToolCard.svelte";
   import { ExternalLinkIcon } from "@lucide/svelte";
 
-  let mainTitle: HTMLElement;
+  let mainTitle1: HTMLElement;
+  let mainTitle2: HTMLElement;
   let mainSubtitle: HTMLElement;
   let mainDesc: HTMLElement;
 
@@ -27,7 +28,8 @@
   ];
 
   $effect(() => {
-    animate(mainTitle, { innerHTML: scrambleText() });
+    animate(mainTitle1, { innerHTML: scrambleText() });
+    animate(mainTitle2, { innerHTML: scrambleText() });
     animate(mainSubtitle, { innerHTML: scrambleText() });
     animate(mainDesc, { innerHTML: scrambleText() });
   });
@@ -38,14 +40,17 @@
     id="home"
     class="flex min-h-[85vh] w-full max-w-3xl flex-col items-center justify-center px-4"
   >
-    <h1 bind:this={mainTitle} class="mb-3 text-4xl font-bold md:text-7xl">
-      KodeUniverse
+    <h1 bind:this={mainTitle1} class="mb-3 font-bold md:text-4xl">
+      Software Engineer
+    </h1>
+    <h1 bind:this={mainTitle2} class="mb-3 font-bold md:text-4xl">
+      Quant Developer
     </h1>
     <p
       bind:this={mainSubtitle}
-      class="mb-6 text-lg text-muted-foreground md:text-2xl"
+      class="mb-6 text-lg text-muted-foreground md:text-xl"
     >
-      Software Engineer
+      Full Stack | ML Systems | FinTech
     </p>
     <p
       bind:this={mainDesc}
