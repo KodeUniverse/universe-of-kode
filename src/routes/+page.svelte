@@ -7,6 +7,8 @@
   import CardFooter from "$lib/components/ui/card/card-footer.svelte";
   import ToolCard from "$lib/components/ui/ToolCard/ToolCard.svelte";
   import { ExternalLinkIcon } from "@lucide/svelte";
+  import AlphaViewPng from "$lib/assets/project-images/alpha-view.png";
+  import PixelscapePng from "$lib/assets/project-images/pixelscape.png";
 
   let mainTitle1: HTMLElement;
   let mainTitle2: HTMLElement;
@@ -85,7 +87,8 @@
     <div class="flex flex-col gap-5">
       <Card>
         <CardTitle>AlphaView Trading Dashboard</CardTitle>
-        <CardContent>
+        <CardContent class="flex flex-col gap-5">
+          <img src={AlphaViewPng} alt="AlphaView Screenshot" />
           <p class="md:text-sm text-muted-foreground">
             Real-time market visualization platform for quants and retail
             algotraders with advanced charting tools and fundamental quant
@@ -110,7 +113,8 @@
       </Card>
       <Card>
         <CardTitle>PIXELSCAPE Pixel Art Editor</CardTitle>
-        <CardContent>
+        <CardContent class="flex flex-col gap-5">
+          <img src={PixelscapePng} alt="PIXELSCAPE Screenshot" />
           <p class="md:text-sm text-muted-foreground">
             Lightweight but powerful pixel art editor built as a terminal UI in
             Rust. Supports layers, mouse-based and key-based editing, brush
