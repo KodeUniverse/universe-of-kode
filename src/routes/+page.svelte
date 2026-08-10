@@ -14,17 +14,17 @@
   let mainDesc: HTMLElement;
 
   const techTools = [
-    "Python",
-    "TypeScript",
-    "Rust",
-    "Svelte",
-    "React",
-    "PostgreSQL",
-    "Linux",
-    "Neovim",
-    "PyTorch",
-    "Docker",
-    "Redis",
+    "python",
+    "typescript",
+    "rust",
+    "svelte",
+    "react",
+    "postgresql",
+    "linux",
+    "neovim",
+    "pytorch",
+    "docker",
+    "redis",
   ];
 
   $effect(() => {
@@ -46,10 +46,7 @@
     <h1 bind:this={mainTitle2} class="mb-3 font-bold md:text-4xl">
       Quant Developer
     </h1>
-    <p
-      bind:this={mainSubtitle}
-      class="mb-6 text-lg text-muted-foreground md:text-xl"
-    >
+    <p bind:this={mainSubtitle} class="mb-6 text-muted-foreground md:text-xl">
       Full Stack | ML Systems | FinTech
     </p>
     <p
@@ -67,34 +64,29 @@
   </section>
 
   <section id="about" class="section-border w-full max-w-3xl px-4">
-    <div class="terminal-prompt mb-3 text-xs md:text-sm">$ cat about.txt</div>
-    <p class="mb-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-      Hi, I'm Dakshin. I work as a risk quant and software developer, and when
-      I'm not at work I do open source development on my own projects, tinker
-      with PC hardware, write progressive metal music, and enjoy city life. I
-      love working on different kinds of projects and I end up exploring a wide
-      variety of hobbies. Please contact me if you like what you see below
-      and/or want to work with me! Always open to meet new people and learn from
-      each other. :)
-    </p>
-  </section>
-
-  <section id="skills" class="section-border mt-16 w-full max-w-3xl px-4">
-    <div class="terminal-prompt mb-4 text-xs md:text-sm">$ ls -la ~/tools/</div>
-    <div class="flex flex-wrap gap-2">
-      {#each techTools as tool}
-        <ToolCard toolName={tool} />
-      {/each}
-    </div>
+    <div class="terminal-prompt mb-3 md:text-sm">$ cat about.txt</div>
+    <Card>
+      <CardContent>
+        <p class="mb-4 leading-relaxed text-muted-foreground md:text-base">
+          Hi, I'm Dakshin. I work as a risk quant and software developer, and
+          when I'm not at work I do open source development on my own projects,
+          tinker with PC hardware, write progressive metal music, and enjoy city
+          life. I love working on different kinds of projects and I end up
+          exploring a wide variety of hobbies. Please contact me if you like
+          what you see below and/or want to work with me! Always open to meet
+          new people and learn from each other. :)
+        </p>
+      </CardContent>
+    </Card>
   </section>
 
   <section id="projects" class="section-border mt-16 w-full max-w-3xl px-4">
-    <div class="terminal-prompt mb-4 text-xs md:text-sm">$ cat projects.md</div>
+    <div class="terminal-prompt mb-4 md:text-sm">$ cat projects.md</div>
     <div class="flex flex-col gap-5">
       <Card>
         <CardTitle>AlphaView Trading Dashboard</CardTitle>
         <CardContent>
-          <p class="text-sm text-muted-foreground">
+          <p class="md:text-sm text-muted-foreground">
             Real-time market visualization platform for quants and retail
             algotraders with advanced charting tools and fundamental quant
             metrics. Built with TypeScript, Python, React, and WebSocket-based
@@ -108,12 +100,18 @@
             size="sm"
             ><ExternalLinkIcon />GitHub
           </Button>
+          <div class="flex ml-auto gap-2">
+            <ToolCard toolName="typescript">TypeScript</ToolCard>
+            <ToolCard toolName="react">React</ToolCard>
+            <ToolCard toolName="docker">Docker</ToolCard>
+            <ToolCard toolName="sqlite">SQLite</ToolCard>
+          </div>
         </CardFooter>
       </Card>
       <Card>
         <CardTitle>PIXELSCAPE Pixel Art Editor</CardTitle>
         <CardContent>
-          <p class="text-sm text-muted-foreground">
+          <p class="md:text-sm text-muted-foreground">
             Lightweight but powerful pixel art editor built as a terminal UI in
             Rust. Supports layers, mouse-based and key-based editing, brush
             sizes and types (fill, dithering, etc.), undo/redo, and
@@ -127,12 +125,15 @@
             variant="default"
             size="sm"><ExternalLinkIcon />GitHub</Button
           >
+          <div class="flex ml-auto gap-2">
+            <ToolCard toolName="rust">Rust</ToolCard>
+          </div>
         </CardFooter>
       </Card>
       <Card>
         <CardTitle>GIF Fox Browser Extension</CardTitle>
         <CardContent>
-          <p class="text-sm text-muted-foreground">
+          <p class="md:text-sm text-muted-foreground">
             A Firefox browser extension that provides a simple and lightweight
             animated GIF picker to use animated reaction images on social media
             sites and forums. Uses KLIPY GIFs API as a data source, sign up for
@@ -145,6 +146,10 @@
             variant="default"
             size="sm"><ExternalLinkIcon />GitHub</Button
           >
+          <div class="flex ml-auto gap-2">
+            <ToolCard toolName="svelte">Svelte</ToolCard>
+            <ToolCard toolName="javascript">JavaScript</ToolCard>
+          </div>
         </CardFooter>
       </Card>
     </div>
@@ -152,17 +157,21 @@
 
   <section id="contact" class="section-border mt-16 w-full max-w-3xl px-4">
     <div class="terminal-prompt mb-4 text-xs md:text-sm">$ ./contact.sh</div>
-    <div class="flex flex-col gap-2 text-sm text-muted-foreground">
-      <p><span class="text-hacker">email :</span> kodeuniverse@proton.me</p>
-      <p><span class="text-hacker">github :</span> KodeUniverse</p>
-      <p>
-        <span class="text-hacker">location :</span> earth / new york city metropolitan
-        area
-      </p>
-      <p class="mt-4 text-xs opacity-75">
-        // always open to interesting conversations
-      </p>
-    </div>
+    <Card>
+      <CardContent>
+        <div class="flex flex-col gap-2 text-sm text-muted-foreground">
+          <p><span class="text-hacker">email :</span> kodeuniverse@proton.me</p>
+          <p><span class="text-hacker">github :</span> KodeUniverse</p>
+          <p>
+            <span class="text-hacker">location :</span> earth / new york city metropolitan
+            area
+          </p>
+          <p class="mt-4 text-xs opacity-75">
+            // always open to interesting conversations
+          </p>
+        </div>
+      </CardContent>
+    </Card>
   </section>
 
   <footer class="pb-8 pt-16 text-xs text-muted-foreground">

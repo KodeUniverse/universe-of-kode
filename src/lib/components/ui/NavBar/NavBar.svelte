@@ -18,11 +18,6 @@
       >about</a
     >
     <a
-      href="#skills"
-      class="text-muted-foreground hover:text-foreground transition-colors"
-      >skills</a
-    >
-    <a
       href="#projects"
       class="text-muted-foreground hover:text-foreground transition-colors"
       >projects</a
