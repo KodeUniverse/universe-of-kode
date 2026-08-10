@@ -103,7 +103,7 @@
             size="sm"
             ><ExternalLinkIcon />GitHub
           </Button>
-          <div class="flex ml-auto gap-2">
+          <div class="flex ml-auto gap-2 flex-wrap">
             <ToolCard toolName="typescript">TypeScript</ToolCard>
             <ToolCard toolName="react">React</ToolCard>
             <ToolCard toolName="docker">Docker</ToolCard>
@@ -113,7 +113,7 @@
       </Card>
       <Card>
         <CardTitle>PIXELSCAPE Pixel Art Editor</CardTitle>
-        <CardContent class="flex flex-col gap-5">
+        <CardContent class="flex flex-col flex-wrap gap-5">
           <img src={PixelscapePng} alt="PIXELSCAPE Screenshot" />
           <p class="md:text-sm text-muted-foreground">
             Lightweight but powerful pixel art editor built as a terminal UI in
@@ -123,7 +123,7 @@
             format, and is cross-platform on Windows and Linux.
           </p>
         </CardContent>
-        <CardFooter class="flex gap-3">
+        <CardFooter class="flex flex-wrap gap-3">
           <Button
             href="https://github.com/KodeUniverse/pixelscape"
             variant="default"
