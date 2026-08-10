@@ -15,20 +15,6 @@
   let mainSubtitle: HTMLElement;
   let mainDesc: HTMLElement;
 
-  const techTools = [
-    "python",
-    "typescript",
-    "rust",
-    "svelte",
-    "react",
-    "postgresql",
-    "linux",
-    "neovim",
-    "pytorch",
-    "docker",
-    "redis",
-  ];
-
   $effect(() => {
     animate(mainTitle1, { innerHTML: scrambleText() });
     animate(mainTitle2, { innerHTML: scrambleText() });
@@ -92,8 +78,8 @@
           <p class="md:text-sm text-muted-foreground">
             Real-time market visualization platform for quants and retail
             algotraders with advanced charting tools and fundamental quant
-            metrics. Built with TypeScript, Python, React, and WebSocket-based
-            data pipelines.
+            metrics. Built with TypeScript, React, and WebSocket-based data
+            pipelines to Alpaca Market Data API and Finnhub API.
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
@@ -119,8 +105,9 @@
             Lightweight but powerful pixel art editor built as a terminal UI in
             Rust. Supports layers, mouse-based and key-based editing, brush
             sizes and types (fill, dithering, etc.), undo/redo, and
-            transparency. Supports export to PNG and a custom project file
-            format, and is cross-platform on Windows and Linux.
+            transparency. Supports export to PNG and bincode serialization to a
+            custom project file format, and is cross-platform on Windows and
+            Linux.
           </p>
         </CardContent>
         <CardFooter class="flex flex-wrap gap-3">
@@ -180,6 +167,6 @@
 
   <footer class="pb-8 pt-16 text-xs text-muted-foreground">
     <span class="terminal-prompt">$</span> echo "built with sveltekit + three.js +
-    caffeine + sleep deprivation"
+    caffeine"
   </footer>
 </div>
