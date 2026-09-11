@@ -56,13 +56,13 @@
     <Card>
       <CardContent>
         <p class="mb-4 leading-relaxed text-muted-foreground md:text-base">
-          Hi, I'm Dakshin. I work as a risk quant and software developer, and
-          when I'm not at work I do open source development on my own projects,
-          tinker with PC hardware, write progressive metal music, and enjoy city
-          life. I love working on different kinds of projects and I end up
-          exploring a wide variety of hobbies. Please contact me if you like
-          what you see below and/or want to work with me! Always open to meet
-          new people and learn from each other. :)
+          Hi, I'm Dakshin. I work as a quant risk analyst and software developer
+          building risk software for assessing live trade risk, and when I'm not
+          at work I do open source development on my own projects and tinker
+          with PC hardware. I love working on different kinds of projects and I
+          end up exploring a wide variety of hobbies. Please contact me if you
+          like what you see below and/or want to work with me! Always open to
+          meet new people and learn from each other. :)
         </p>
       </CardContent>
     </Card>
@@ -78,8 +78,8 @@
           <p class="md:text-sm text-muted-foreground">
             Real-time market visualization platform for quants and retail
             algotraders with advanced charting tools and fundamental quant
-            metrics. Built with TypeScript, React, and WebSocket-based data
-            pipelines to Alpaca Market Data API and Finnhub API.
+            metrics. Built with TypeScript, React, FastAPI and WebSocket-based
+            data pipelines to Alpaca Market Data API and Finnhub API.
           </p>
         </CardContent>
         <CardFooter class="flex gap-3">
@@ -92,6 +92,8 @@
           <div class="flex ml-auto gap-2 flex-wrap">
             <ToolCard toolName="typescript">TypeScript</ToolCard>
             <ToolCard toolName="react">React</ToolCard>
+            <ToolCard toolName="python">Python</ToolCard>
+            <ToolCard toolName="fastapi">FastAPI</ToolCard>
             <ToolCard toolName="docker">Docker</ToolCard>
             <ToolCard toolName="sqlite">SQLite</ToolCard>
           </div>

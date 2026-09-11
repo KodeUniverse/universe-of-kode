@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Card from "$lib/components/ui/card/card.svelte";
   import type { RGBValue } from "$types";
   import type { Snippet } from "svelte";
   let { toolName, children }: { toolName: string; children: Snippet } =
@@ -13,6 +12,7 @@
     react: { r: 97, g: 219, b: 251 },
     docker: { r: 29, g: 99, b: 237 },
     javascript: { r: 240, g: 219, b: 79 },
+    fastapi: { r: 5, g: 153, b: 139 },
   };
 
   const bgColor: RGBValue = $derived(
