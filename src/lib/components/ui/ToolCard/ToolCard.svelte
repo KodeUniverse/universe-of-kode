@@ -13,6 +13,7 @@
     docker: { r: 29, g: 99, b: 237 },
     javascript: { r: 240, g: 219, b: 79 },
     fastapi: { r: 5, g: 153, b: 139 },
+    c: { r: 80, g: 80, b: 80 },
   };
 
   const bgColor: RGBValue = $derived(
