@@ -9,6 +9,7 @@
   import { ExternalLinkIcon } from "@lucide/svelte";
   import AlphaViewPng from "$lib/assets/project-images/alpha-view.png";
   import PixelscapePng from "$lib/assets/project-images/pixelscape.png";
+  import CractalPng from "$lib/assets/project-images/cractal.png";
 
   let mainTitle1: HTMLElement;
   let mainTitle2: HTMLElement;
@@ -42,8 +43,8 @@
       class="text-sm text-muted-foreground leading-relaxed md:text-base text-center"
     >
       Hello friend! My name is Dakshin, I go by KodeUniverse on GitHub. Welcome
-      to my website! I showcase some of my programming projects here. Please
-      check out the cool stuff below!
+      to my website. I showcase some of my programming projects here, please
+      check out the cool stuff below.
     </p>
     <div class="mt-8 flex gap-4">
       <a href="#projects"><Button variant="default">View Projects</Button></a>
@@ -56,13 +57,12 @@
     <Card>
       <CardContent>
         <p class="mb-4 leading-relaxed text-muted-foreground md:text-base">
-          Hi, I'm Dakshin. I work as a quant risk analyst and software developer
-          building risk software for assessing live trade risk, and when I'm not
-          at work I do open source development on my own projects and tinker
-          with PC hardware. I love working on different kinds of projects and I
-          end up exploring a wide variety of hobbies. Please contact me if you
-          like what you see below and/or want to work with me! Always open to
-          meet new people and learn from each other. :)
+          I work as a quant risk analyst and software developer building risk
+          software for assessing live trade risk, and when I'm not at work I do
+          open source development on my own projects and tinker with PC
+          hardware. I love working on different kinds of projects. Please
+          contact me if you like what you see below and/or want to work with me!
+          Always open to meet new people and learn from each other. :)
         </p>
       </CardContent>
     </Card>
@@ -120,6 +120,30 @@
           >
           <div class="flex ml-auto gap-2">
             <ToolCard toolName="rust">Rust</ToolCard>
+          </div>
+        </CardFooter>
+      </Card>
+      <Card>
+        <CardTitle>Cractal - A Fractal Visualizer</CardTitle>
+        <CardContent class="flex flex-col gap-5">
+          <img src={CractalPng} alt="Cractal Screenshot" />
+          <p class="md:text-sm text-muted-foreground">
+            A simple GPU-accelerated fractal visualizer lib written in plain C
+            and GLSL fragment shaders with raylib. Supports rendering mandelbrot
+            and julia sets and different colorschemes, and continously updating
+            zoom and pan.
+          </p>
+        </CardContent>
+        <CardFooter class="flex gap-3">
+          <Button
+            href="https://github.com/KodeUniverse/cractal"
+            variant="default"
+            size="sm"
+            ><ExternalLinkIcon />GitHub
+          </Button>
+          <div class="flex ml-auto gap-2 flex-wrap">
+            <ToolCard toolName="c">C</ToolCard>
+            <ToolCard toolName="glsl">GLSL</ToolCard>
           </div>
         </CardFooter>
       </Card>
