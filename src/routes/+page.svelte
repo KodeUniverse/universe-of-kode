@@ -124,9 +124,9 @@
         </CardFooter>
       </Card>
       <Card>
-        <CardTitle>Cractal - A Fractal Visualizer</CardTitle>
+        <CardTitle>cractal - A Fractal Visualizer</CardTitle>
         <CardContent class="flex flex-col gap-5">
-          <img src={CractalPng} alt="Cractal Screenshot" />
+          <img src={CractalPng} alt="cractal Screenshot" />
           <p class="md:text-sm text-muted-foreground">
             A simple GPU-accelerated fractal visualizer lib written in plain C
             and GLSL fragment shaders with raylib. Supports rendering mandelbrot
